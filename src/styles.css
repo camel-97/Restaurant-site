@@ -46,6 +46,11 @@ body {
         color: white;
 }
 
+button:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
 .center-pad {
     position:fixed;
     top: 0;
@@ -67,7 +72,7 @@ body {
     z-index: 1;
 }
 
-.about, .where-to-find {
+.about, .where-to-find, .menu-title {
     font-family: "Mrs Saint Delafield", cursive;
     font-weight: 400;
     font-style: normal;
@@ -104,11 +109,23 @@ img {
     text-align: center;
 }
 
+.menu-title {
+    font-size: 50px;
+}
+
+.menu-info {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+
 .menu {
-    margin-top: 100px;
-    background-color: rgb(223, 223, 223);
+    margin-top: 40px;
+    margin-bottom: 100px;
+    background: linear-gradient(to bottom, #eee3e3, #f2f2f2, #c4bbbb);
     width: 400px;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -121,8 +138,12 @@ img {
 }
 
 .menu-head {
-    font-size: 30px;
     margin-bottom: 20px;
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+
 }
 
 .menu-content .menu-head{
@@ -134,4 +155,52 @@ img {
 .menu-content {
     padding: 10px;
     font-style: italic;
+}
+
+.menu7 {
+    margin-bottom: 40px;
+}
+
+.bookings-header {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.opening-container {
+
+}
+
+.opening-header {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.day-div {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.make-a-booking-head {
+    font-family: "Mrs Saint Delafield", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.make-a-booking-content {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 12px;
+    
 }

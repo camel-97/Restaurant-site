@@ -2,6 +2,19 @@ export function loadMenu() {
     const main = document.getElementById("content")
     main.innerHTML = "";
 
+    const menuMainHead = document.createElement("div");
+    menuMainHead.textContent = "Menu";
+    menuMainHead.classList.add("menu-title");
+    main.appendChild(menuMainHead);
+
+    const menuInfo = document.createElement("div");
+    menuInfo.classList.add("menu-info");
+    menuInfo.textContent = `Our menus are constantly changing with the seasons, guided by our local 
+    farmer's and fresh produce. Our menu is designed to be ordered in it's entirety and shared between 2 people, but that
+    decision is entirely up to you...`
+    main.appendChild(menuInfo);
+
+
     const menu = document.createElement("div");
     menu.classList.add("menu");
     main.appendChild(menu);
@@ -43,6 +56,7 @@ export function loadMenu() {
 
     const menu7 = document.createElement("div");
     menu7.classList.add("menu-content");
+    menu7.classList.add("menu7")
     menu7.textContent = "Aged Beef Tartare, bone marrow toast, pickled shallots, cured yolk, nasturtium     16"
     menu.appendChild(menu7);
 };
